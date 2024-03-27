@@ -1,0 +1,84 @@
+body{ background-color: white;
+
+    ul{
+        text-align: right;
+        list-style: none;
+    }
+    
+    ul li{
+        font: bold 14px/18px san-seriff;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        padding: 15px 20px;
+        background: darkcyan;
+        cursor: pointer;
+    }
+    
+    ul li:hover{
+        background: lightseagreen;
+        color: aliceblue;
+    }
+    
+    ul li ul{
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        left: -10000px;
+        width: 150px;
+    }
+    
+    ul li ul li{
+        background: darkcyan;
+        display: block;
+        color: black;
+    }
+    
+    ul li ul li:hover{background: lightseagreen;}
+    ul li:hover ul{
+        display: block;
+        left: 0px;
+    }
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 400px 400px 200px;
+    margin: 5%;
+    padding: 5% 5% 5% 5%;
+}
+
+.header{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+.design1{
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+.design2{
+    background-color: palegreen;
+    text-align: center;
+}
+
+.design3{
+    background-color: lightgreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+.design4{
+    background-color: palevioletred;
+    text-align: center;
+}
+.footer{
+    background-color: peachpuff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
